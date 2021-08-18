@@ -68,7 +68,7 @@ let partida = (jogada1, jogada2) => {
     switch (true) {
         case jogada1 == 1 && jogada2 == 2:
             vencedor[0]++;
-            return alert(`
+            return alert(`0889
             Eu escolhi: ✊
             Você escolheu: 🖐
             ...

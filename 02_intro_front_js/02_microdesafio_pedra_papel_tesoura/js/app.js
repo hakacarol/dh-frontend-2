@@ -45,6 +45,8 @@
 let introducao = alert(`
 Hey humano!!!
 Vamos jogar JO - KEN - PO!? 
+Melhor de 3, hein!
+
 Clique em OK! Bora perder para mim 😎`);
 
 //Criando os jogadores e suas escolhas
@@ -72,7 +74,9 @@ let partida = (jogada1, jogada2) => {
             Eu escolhi: ✊
             Você escolheu: 🖐
             ...
-            Você ganhou, teve sorte 🍀... 🖐 cobre ✊`);
+            🖐 cobre ✊
+            ...
+            Você ganhou... teve sorte 🍀...`);
 
         case jogada1 == 2 && jogada2 == 3:
             vencedor[0]++;
@@ -80,7 +84,9 @@ let partida = (jogada1, jogada2) => {
             Eu escolhi: ✌
             Você escolheu: ✊
             ...
-            Você ganhou, teve sorte 🍀... ✊ quebra ✌`);
+            ✊ quebra ✌
+            ...
+            Você ganhou... teve sorte 🍀...`);
 
         case jogada1 == 3 && jogada2 == 1:
             vencedor[0]++;
@@ -88,7 +94,9 @@ let partida = (jogada1, jogada2) => {
             Eu escolhi: 🖐
             Você escolheu: ✌
             ...
-            Você ganhou, teve sorte 🍀... ✌ corta 🖐`);
+            ✌ corta 🖐
+            ...
+            Você ganhou... teve sorte 🍀...`);
 
         case jogada2 == 1 && jogada1 == 2:
             vencedor[1]++;
@@ -96,7 +104,9 @@ let partida = (jogada1, jogada2) => {
             Eu escolhi: 🖐
             Você escolheu: ✊
             ...
-            Uhul! Ganhei 🙂! 🖐 cobre ✊`);
+            🖐 cobre ✊
+            ...
+            Uhuul! Ganhei 🙂!`);
 
         case jogada2 == 2 && jogada1 == 3:
             vencedor[1]++;
@@ -104,7 +114,9 @@ let partida = (jogada1, jogada2) => {
             Eu escolhi: ✊
             Você escolheu: ✌
             ...
-            Uhul! Ganhei 🙂! ✊ quebra ✌`);
+            ✊ quebra ✌
+            ...
+            Uhuul! Ganhei 🙂! `);
 
         case jogada2 == 3 && jogada1 == 1:
             vencedor[1]++;
@@ -112,15 +124,19 @@ let partida = (jogada1, jogada2) => {
             Eu escolhi: ✌
             Você escolheu: 🖐
             ...
-            Uhul! Ganhei 🙂! ✌ corta 🖐`);
+            ✌ corta 🖐
+            ...
+            Uhuul! Ganhei 🙂!`);
 
         case jogada1 == jogada2:
-            return alert(`Afs.. Empatou... 😐`);
+            return alert(`Afss.. Empatou... 😐`);
 
         default:
             return alert(`
-            Ops, errrro no sisstt e e maa... 🤡...
-            Vamos jogar novamente`)
+            Ops, errrro no sissttee maa...
+            Allgueemm mee dessconfiguurou u 🤡...
+
+            Vamos jogar essa jogada novamente!`)
     }
 
 };

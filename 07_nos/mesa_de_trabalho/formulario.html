@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var formulario = document.createElement("form");
+        formulario.setAttribute('class', 'formulario');
+        document.body.appendChild(formulario);
+    
+        //Seleção do formulário:
+    
+        var form = document.querySelector(".formulario");
+    
+        //Inserção do Título:
+    
+        var titulo = document.createElement("h1");
+        var tituloText = document.createTextNode("Login");
+        titulo.appendChild(tituloText);
+        form.appendChild(titulo);
+    
+        //Inserção dos inputs:
+    
+        var email = document.createElement("input");
+        email.setAttribute("placeholder", "Email");
+        email.setAttribute("type", "text");
+        form.appendChild(email);
+    
+        var senha = document.createElement("input");
+        senha.setAttribute("placeholder", "Senha");
+        senha.setAttribute("type", "password");
+        form.appendChild(senha);
+    
+        //Inserção dos botões:
+    
+        var botaoEnviar = document.createElement("button");
+        var botaoTextoEnviar = document.createTextNode("Enviar");
+        botaoEnviar.setAttribute("type", "submit");
+        botaoEnviar.appendChild(botaoTextoEnviar);
+        form.appendChild(botaoEnviar);
+    
+        var botaoCancelar = document.createElement("button");
+        var botaoTextoCancelar = document.createTextNode("Cancelar");
+        botaoCancelar.setAttribute("type", "reset");
+        botaoCancelar.appendChild(botaoTextoCancelar);
+        form.appendChild(botaoCancelar);
+    
+        //Manipulação de atributos:
+    
+        email.setAttribute("disabled", true);
+    
+        //Remoção do atributo:
+    
+        email.removeAttribute("placeholder");
+    
+        //Sugestão de estilização:
+    
+        formulario.style.display = "flex";
+        formulario.style.textAlign = "center";
+        formulario.style.justifyContent = "center";
+        formulario.style.flexDirection = "column";
+    </script>
+    
+</body>
+</html>

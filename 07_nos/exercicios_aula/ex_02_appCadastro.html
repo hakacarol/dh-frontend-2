@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - AppCadastro</title>
+</head>
+
+<body>
+    <input type = "text" id = "txtIncluir">
+    <button id = "btnAdicionar">Adicionar</button>
+    <br><br>
+    <ul id = "listaElementos">
+    </ul>
+
+    <script>
+        function iniciar() {
+            document.getElementById("btnAdicionar").addEventListener("click",
+            function () {
+                let lista = document.getElementById("listaElementos");
+                let texto = document.getElementById("txtIncluir");
+                let li = document.createElement("li")
+                li.textContent = texto.value;
+                lista.appendChild(li);
+                texto.value = ""; 
+                texto.focus(); 
+            });
+        }
+        
+        window.addEventListener("load", iniciar);
+    </script>
+</body>
+</html>

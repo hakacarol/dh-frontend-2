@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&family=Satisfy&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Quadro de inspirações</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div id="brand">
+            <h1 id="card">C</h1>
+            <h1>ard</h1>
+            <h1 id="stock">S</h1>
+            <h1>tock</h1>
+        </div>
+
+        <h2 id="subtitle">Seu quadro de inspirações</h2>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- ARMAZENAMENTO DOS CARDS CRIADO PELO FORMULÁRIO -->
+        <div id="cards">
+        </div>
+
+        <!-- BOTÃO DE ARMAZENAR OS CARDS -->
+        <img src="./imgs/btnOpenForm.svg" id="btnAddCard" alt="Adicionar">
+
+        <div id="extraDivFormImgs" style="display: none;">
+            <div id="formImgs">
+                <form id="formAddCard">
+                    <img src="./imgs/btnCloseForm.svg" id="btnCloseForm" alt="">
+                    
+                    <!-- FORMULÁRIO DA CRIAÇÃO DO CARD -->
+                    <fieldset>
+                        <legend>Inspirações</legend>
+                        
+                        <div id="inputsFormAddCard">
+                            <input type="text" name="title" id="titleForm" placeholder="Insira um título">
+
+                            <input type="text" name="picture" id="pictureForm" placeholder="Link da foto">
+
+                            <input type="text" name="description" id="descriptionForm"
+                                placeholder="Escreva uma breve descrição">
+                        </div>
+
+                        <!-- BOTÃO DE CRIAR O CARD E LIMPARA OS INPUTS DO FORMULÁRIO DO CARD -->
+                        <div id="divBtnFormAddCard">
+                            <button type="submit" id="submitFormAddCard">ADICIONAR</button>
+                            <button type="reset" id="resetFormAddCard">LIMPAR</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <!-- BOTÃO CONTATO -->
+        <button id="btnOpenContact"><img
+            src="https://image.flaticon.com/icons/png/512/3885/3885190.png" class="btnOp" alt="">
+            <p class="btnText">Fale Conosco</p>
+        </button>
+        <div id="extraDivContact" style="display: none;">
+
+            <!-- FORMULÁRIO CONTATO -->
+            <div class="form-popup" id="contact">
+                <form class="form-container">
+                    <h2>Fale Conosco</h2>
+
+                    <label for="name"><b>NOME</b></label>
+                    <input type="text" placeholder="Insira seu nome" name="name" required>
+
+                    <label for="email"><b>EMAIL</b></label>
+                    <input type="email" placeholder="Insira seu email" name="email" required>
+
+                    <label for="message"><b>MENSAGEM</b></label>
+                    <textarea placeholder="Escreva sua mensagem" name="message" cols="20" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- BOTÃO EQUIPE -->
+        <button id="btnOpenTeam"><img
+            src="https://image.flaticon.com/icons/png/512/1534/1534952.png" class="btnOp" alt="">
+            <p class="btnText">Equipe</p>
+        </button>
+        
+        <div id="extraDivTeam" style="display: none;">
+            <div class="form-popup2" id="team">
+                
+                <!-- EQUIPE -->
+                <div class="form-container2">
+                    <h2>Equipe</h2>
+
+                    <ul>
+                        <li>Ailla Freire</li>
+                        <li>Carolina Hakamada</li>
+                        <li>Dominic Lourenço</li>
+                        <li>Helena Perdigueiro</li>
+                        <li>Renata Leal</li>
+                        <li>Ruthiane Teixeira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

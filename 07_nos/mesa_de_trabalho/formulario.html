@@ -8,43 +8,43 @@
 </head>
 <body>
     <script>
-        var formulario = document.createElement("form");
+        let formulario = document.createElement("form");
         formulario.setAttribute('class', 'formulario');
         document.body.appendChild(formulario);
     
         //Seleção do formulário:
     
-        var form = document.querySelector(".formulario");
+        let form = document.querySelector(".formulario");
     
         //Inserção do Título:
     
-        var titulo = document.createElement("h1");
-        var tituloText = document.createTextNode("Login");
+        let titulo = document.createElement("h1");
+        let tituloText = document.createTextNode("Login");
         titulo.appendChild(tituloText);
         form.appendChild(titulo);
     
         //Inserção dos inputs:
     
-        var email = document.createElement("input");
+        let email = document.createElement("input");
         email.setAttribute("placeholder", "Email");
         email.setAttribute("type", "text");
         form.appendChild(email);
     
-        var senha = document.createElement("input");
+        let senha = document.createElement("input");
         senha.setAttribute("placeholder", "Senha");
         senha.setAttribute("type", "password");
         form.appendChild(senha);
     
         //Inserção dos botões:
     
-        var botaoEnviar = document.createElement("button");
-        var botaoTextoEnviar = document.createTextNode("Enviar");
+        let botaoEnviar = document.createElement("button");
+        let botaoTextoEnviar = document.createTextNode("Enviar");
         botaoEnviar.setAttribute("type", "submit");
         botaoEnviar.appendChild(botaoTextoEnviar);
         form.appendChild(botaoEnviar);
     
-        var botaoCancelar = document.createElement("button");
-        var botaoTextoCancelar = document.createTextNode("Cancelar");
+        let botaoCancelar = document.createElement("button");
+        let botaoTextoCancelar = document.createTextNode("Cancelar");
         botaoCancelar.setAttribute("type", "reset");
         botaoCancelar.appendChild(botaoTextoCancelar);
         form.appendChild(botaoCancelar);

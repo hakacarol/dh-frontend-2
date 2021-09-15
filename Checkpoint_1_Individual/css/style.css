@@ -218,7 +218,7 @@ fieldset legend {
 #inputsFormAddCard input:hover, input:focus {
   transform: scale(1.02);
   color: black;
-  background-color: #ddd;
+  background-color: rgb(233, 231, 231);
   outline: none;
 }
 

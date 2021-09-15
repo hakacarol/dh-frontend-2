@@ -297,6 +297,7 @@ fieldset legend {
   border-radius: 1rem;
   box-shadow: 0 0 0.3rem rgb(221, 220, 217);
   margin-left: 1.1rem;
+  color:rgb(131, 127, 127);
 }
 
 .form-container h2, .form-container2 h2  {
